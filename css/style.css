@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    --standard-font: 'Poppins', sans-serif;
+/*Primary*/
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+/*Neutral*/
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: var(--Grayish-Blue);
+    font-family: var(--standard-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    max-width: 1115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-weight: 200;
+}
+h2{
+    font-size: xx-large;
+}
+h1, h2, h3{
+    color: var(--Very-Dark-Blue);
+}
+
+.page{
+    max-width: 550px;
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+}
+.page p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    display: grid;
+    grid-template-areas: 
+    "sup mc cal";
+    grid-template-columns: 3 1fr;
+
+}
+section p{
+    font-size: 12px;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+img{
+    width: 50px;
+}
+.calculator .img{
+    display: flex;
+    justify-content: right;
+}
+.supervisor{
+    grid-area: sup;
+    max-width: 300px;
+    background-color: var(--Very-Light-Gray);
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px rgba(172, 169, 169, 0.377);
+    padding: 30px;
+    text-align: left;
+    border-top: 4px solid var(--Cyan);
+}
+.supervisor .img{
+    display: flex;
+    justify-content: right;
+}
+.main-card{
+    grid-area: mc;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.team-builder{
+    max-width: 300px;
+    background-color: var(--Very-Light-Gray);
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px rgba(172, 169, 169, 0.377);
+    padding: 30px;
+    text-align: left;
+    border-top: 4px solid var(--Red);
+}
+.team-builder .img{
+    display: flex;
+    justify-content: right;
+}
+.karma{
+    max-width: 300px;
+    background-color: var(--Very-Light-Gray);
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px rgba(172, 169, 169, 0.377);
+    padding: 30px;
+    text-align: left;
+    border-top: 4px solid var(--Orange);
+}
+.karma .img{
+    display: flex;
+    justify-content: right;
+}
+.calculator{
+    grid-area: cal;
+    max-width: 300px;
+    background-color: var(--Very-Light-Gray);
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px rgba(172, 169, 169, 0.377);
+    padding: 30px;
+    text-align: left;
+    border-top: 4px solid var(--Blue);
+}
+.calculator .img{
+    display: flex;
+    justify-content: right;
+}
+footer{
+    text-align: center;
+    padding: 30px;
+}
+@media (max-width: 750px){
+    main{
+        height: 100%;
+    }
+   
+    h1, h2{
+        font-size: x-large;
+    }
+    .header-page{
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .header-page p{
+        margin-top: 30px;
+    }
+    .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    footer{
+        max-width: 300px;
+    }
+
+   
+}
