@@ -4,9 +4,9 @@
 
 # Four card feature section master
 
+![desktop-design](https://user-images.githubusercontent.com/91090905/147771507-d85490f6-3c26-4e7f-9039-7ec2271b13bc.jpg)
 
-
-## Click to see my project-<a href="https://jsmeyring.github.io/social-proof/index.html" target="_blank">Four card feature section master</a>.
+## Click to see my project-<a href="https://jsmeyring.github.io/four-card-feature/index.html" target="_blank">Four card feature section master</a>.
 
 ## I'm a beginning front-end developer.
 
